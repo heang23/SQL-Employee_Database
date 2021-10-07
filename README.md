@@ -6,7 +6,7 @@
 
 It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
 
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
+I have designed the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, perform:
 
 1. Data Engineering
 
@@ -20,16 +20,14 @@ Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool li
 
 #### Data Engineering
 
-* Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
+* Use the information you have to create a table schema for each of the six CSV files. There are several variables to be specified such as data types, primary keys, foreign keys, and other constraints.
 
-  * For the primary keys check to see if the column is unique, otherwise create a [composite key](https://en.wikipedia.org/wiki/Compound_key). Which takes to primary keys in order to uniquely identify a row.
-  * Be sure to create tables in the correct order to handle foreign keys.
-
-* Import each CSV file into the corresponding SQL table. **Note** be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
+* For the primary keys has to be unique in each column, otherwise create a [composite key](https://en.wikipedia.org/wiki/Compound_key). Which takes to primary keys in order to uniquely identify a row.
+* Created tables in the correct order to handle foreign keys.
 
 #### Data Analysis
 
-Once you have a complete database, do the following:
+The completed database consists of:
 
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
@@ -47,11 +45,11 @@ Once you have a complete database, do the following:
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-## Bonus
+## Consideration
 
-As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualization of the data, with which you will confront your boss:
+As we have examined the data, we are overcome with a creeping suspicion that the dataset is fake. To confirm our hunch to make more sense of our analysed data, we decided to take the following steps to generate a visualization of the data, with which we will perform:
 
-1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
+1. Import the SQL database into Pandas. This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
 
    ```sql
    from sqlalchemy import create_engine
