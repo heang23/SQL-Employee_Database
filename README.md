@@ -101,6 +101,8 @@ As we have examined the data, we are overcome with a creeping suspicion that the
 
 2. A histogram to visualize the most common salary ranges for employees.
 
+![histogram.png](histogram.png)
 
+3. Create a bar chart of average salary by title.
 
-3. Create a bar chart of average salary by title.****
+![avg.png](avg.png)
